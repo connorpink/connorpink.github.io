@@ -1,0 +1,8 @@
+div{
+    display:flexbox;
+    flex-direction:horizontal;
+    
+}
+h1{
+    font-family:Arial, Helvetica, sans-serif
+}
