@@ -1,5 +1,5 @@
 div{
-    display:flexbox;
+    display:flex;
     flex-direction:horizontal;
     
 }
