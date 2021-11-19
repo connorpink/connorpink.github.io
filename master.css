@@ -6,3 +6,124 @@ div{
 h1{
     font-family:Arial, Helvetica, sans-serif
 }
+
+
+.SectionMain{
+    font-family: montserrat;
+}
+.coolThingBox{
+    width:300px;
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@keyframes AnimateRight {
+    0%{
+        left:0px;
+    }
+    50%{
+        left:120px;
+    }
+    100%{
+        left:120px;
+
+    }
+  }
+  
+.LeftPane:hover .coolThing1{
+    animation-name: AnimateRight;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes AnimateLeft {
+    0%{
+        right:0px;
+    }
+    50%{
+        right:120px;
+    }
+    100%{
+        right:120px;
+    }
+  }
+
+.LeftPane:hover .coolThing3{
+    animation-name: AnimateLeft;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes changeColor{
+    0%{background-color: white;}
+    100%{background-color: #dee0e2fd;}
+}
+.LeftPane:hover{
+    animation: changeColor 2s ease-out forwards;
+}
+.RightPane:hover{
+    animation: changeColor 2s ease-out forwards;
+}
+
+.coolThing1{
+    position:relative;
+    width: 0px;
+    height: 0px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid lightblue; 
+}
+
+.coolThing2{
+    position:relative;
+    width: 0px;
+    height: 0px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 80px solid red;
+    
+}
+.coolThing3{
+    position:relative;
+    width: 0px;
+    height: 0px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid gray;
+
+}
+.LeftPane{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 3em;
+}
+.RightPane{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding: 3em;
+}
+.FullPane{
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+}
+.FullPane h4{
+    font-size: small;
+}
+.FullPane h5{
+    font-size:small;
+}
+.FullPane p{
+    font-size: small;
+}
+.FullPane .indentedParagraph{
+    padding-left:1em;
+}
