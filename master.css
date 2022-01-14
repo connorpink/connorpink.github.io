@@ -1,3 +1,5 @@
+/*Root CSS */
+
 div{
     display:flex;
     flex-direction:horizontal;
@@ -6,6 +8,18 @@ div{
 h1{
     font-family:montserrat
 }
+
+/* Title Page */
+#nameTag {
+    font-size: 9vw;
+}
+
+#NameCase{
+    margin: 32vh;
+    border-width: 40px solid transparent;
+    border-color: black;
+}
+
 
 
 .SectionMain{
