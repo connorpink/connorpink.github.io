@@ -11,11 +11,11 @@ h1{
 
 /* Title Page */
 #nameTag {
-    font-size: 9vw;
+    font-size: 16vh;
 }
 
 #NameCase{
-    margin: 20vh;
+    margin: 22vh;
     border-width: 40px solid transparent;
     border-color: black;
 }
