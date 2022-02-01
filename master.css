@@ -1,5 +1,7 @@
 /*Root CSS */
-
+body{
+    font-family: montserrat;
+}
 div{
     display:flex;
     flex-direction:horizontal;
@@ -15,7 +17,9 @@ h1{
 }
 
 #NameCase{
-    margin: 22vh;
+    margin: 24vh;
+    margin-left: auto;
+    margin-right: auto;
     border-width: 40px solid transparent;
     border-color: black;
 }
