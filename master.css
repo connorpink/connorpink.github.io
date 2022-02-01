@@ -2,11 +2,7 @@
 body{
     font-family: montserrat;
 }
-div{
-    display:flex;
-    flex-direction:horizontal;
-    justify-content: center;
-}
+
 h1{
     font-family:montserrat
 }
@@ -22,6 +18,9 @@ h1{
     margin-right: auto;
     border-width: 40px solid transparent;
     border-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
@@ -127,11 +126,13 @@ h1{
     flex-direction: column;
     justify-content: top;
     padding: 3em;
+    
 }
 .FullPane{
     display: flex;
     flex-direction: row;
     padding: 10%;
+    flex-wrap: wrap;
 }
 .FullPane h4{
     font-size: small;
@@ -144,4 +145,21 @@ h1{
 }
 .FullPane .indentedParagraph{
     padding-left:1em;
+}
+
+
+/* Projects display area   */
+
+.Projects{
+    display:flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 20vw;
+   margin-right: 20vw;
+   margin-bottom:10vh;
+}
+
+#ad_html_page {
+    font-size: 6vh;
+    text-decoration: none;
 }
