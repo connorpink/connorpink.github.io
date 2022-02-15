@@ -153,22 +153,22 @@ h1{
 
 .Projects{
     display:flex;
-   flex-direction: column;
-   justify-content: center;
+     flex-direction: column;
+    justify-content: center;
 }
 .projectPane{
     display:flex;
-   flex-direction: column;
-   justify-content: center;
-   margin-left: 20vw;
-   margin-right: 20vw;
-   margin-bottom:10vh;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom:10vh;
     padding: 5vw;
 }
 .projectPane:hover{
     animation: changeColor 2s ease-out forwards;
 }
-#ad_html_page {
+#ProjectTitle {
     font-size: 6vh;
     text-decoration: none;
 }
