@@ -1,11 +1,18 @@
-<doctype html>
-
+<!DOCTYPE html>
+<html>
 	<head>
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://kit.fontawesome.com/81964b4b94.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="master.css" />
+		
+		<!--<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>-->
+
+		
 		<title>Home Page</title>
 	</head>
 
@@ -17,8 +24,8 @@
 		</div>
 
 		<section class="SectionMain">
-			<div class="FullPane">
-				<div class="LeftPane">
+			<div class="FullPane load-hidden">
+				<div class="LeftPane load-hidden">
 					<h2>About Me.</h2>
 					<p>
 						My name is Connor Pink. I am a Computer Science student at Trent
@@ -30,7 +37,7 @@
 						<div class="coolThing3"></div>
 					</div>
 				</div>
-				<div class="RightPane">
+				<div class="RightPane load-hidden">
 					<h3>Connor Pink</h3>
 					<h4>Computer Science Student- Trent University, Peterborough</h4>
 					<h5>Contact me:</h5>
@@ -42,9 +49,10 @@
 			</div>
 
 			<div class="Projects">
-				<div class="projectPane">
+				<div class="projectPane load-hidden">
 					<div class="projectPaneLeft">
-						<a href="/AD-HTML-Page" id="ProjectTitle">AD HTML Page <span class = 'inLineIcon'><i class="fa-solid fa-square-arrow-up-right"></i></span></a>
+						<a href="/AD-HTML-Page" id="ProjectTitle">AD HTML Page <span class='inLineIcon'><i
+									class="fa-solid fa-square-arrow-up-right"></i></span></a>
 						<p>
 							This program was made for the IT department at PRHC hospital as a
 							tool to provide easy access to processes that are not available in
@@ -56,12 +64,13 @@
 						</p>
 					</div>
 					<div class="projectPaneRight">
-						<a href="/AD-HTML-Page"><i class="fa-solid fa-user-gear"></i></a>						
+						<a href="/AD-HTML-Page"><i class="fa-solid fa-user-gear"></i></a>
 					</div>
 				</div>
 				<div class="projectPane">
 					<div class="projectPaneLeft">
-						<a href="/AssetManagementWebpage" id="ProjectTitle">Asset Inventory webpage <div class = 'inLineIcon'><i class="fa-solid fa-square-arrow-up-right"></i></div></a>
+						<a href="/AssetManagementWebpage" id="ProjectTitle">Asset Inventory webpage <div
+								class='inLineIcon'><i class="fa-solid fa-square-arrow-up-right"></i></div></a>
 						<p>
 							This web-application was made for the IT department at PRHC hospital
 							as a tool to provide easy access to processes that are not available
@@ -73,17 +82,19 @@
 						</p>
 					</div>
 					<div class="projectPaneRight">
-						<a href="/AssetManagementWebpage" ><i class="fa-solid fa-clipboard-list"></i></a>
+						<a href="/AssetManagementWebpage"><i class="fa-solid fa-clipboard-list"></i></a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<footer>
-			<div class = "socials">
-				<a href="https://www.linkedin.com/in/connor-pink-65b029193/" target="_blank" class="fa fa-linkedin"></a>
-				<a href="https://github.com/connorpink" target="_blank" class="fa fa-github"></a>
-				<a href='mailto:connorpink@trentu.ca' target="_blank" class="fa fa-envelope"></a>
-			</div>
-		</footer>
+		<script type="text/javascript" src='Scripts/ScrollAnimation.js'></script>
+
 	</body>
-</doctype>
+	<footer>
+		<div class="socials">
+			<a href="https://www.linkedin.com/in/connor-pink-65b029193/" target="_blank" class="fa fa-linkedin"></a>
+			<a href="https://github.com/connorpink" target="_blank" class="fa fa-github"></a>
+			<a href='mailto:connorpink@trentu.ca' target="_blank" class="fa fa-envelope"></a>
+		</div>
+	</footer>
+</html>

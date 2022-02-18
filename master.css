@@ -1,3 +1,9 @@
+/* RESET */
+html, body {
+    margin:0;
+    padding:0;
+    }
+
 /*Root CSS */
 html{
     padding: 0;
@@ -237,7 +243,7 @@ body{
     font-size:2vh;
     display: inline;
 }
-.ProjectPaneRight a{
+.projectPaneRight a{
     font-size: calc(2vh*3);
     display:flex;
     flex-direction:row;
@@ -279,5 +285,9 @@ body{
     background-color: rgb(33, 33, 34);
     border: 0;
   }
-  
+
+  /* scroll */
+  html.sr .load-hidden {
+    visibility: hidden;
+}
   
