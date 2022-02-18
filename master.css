@@ -1,6 +1,7 @@
 /*Root CSS */
 body{
     font-family: montserrat;
+    background-color: #363636;
 }
 
 h1{
@@ -21,6 +22,7 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: #19e68c;
 }
 
 
@@ -78,8 +80,14 @@ h1{
     animation-direction: alternate;
 }
 @keyframes changeColor{
-    0%{background-color: white;}
-    100%{background-color: #dee0e2fd;}
+    0%{background-color: #4a4a4a;}
+    25%{color:white;}
+    50%{color:black;}
+    100%{background-color: #cacfce;color:black;}
+}
+@keyframes changeColorProject{
+    0%{background-color: #4a4a4a;}
+    100%{background-color: #666969;}
 }
 .LeftPane:hover{
     animation: changeColor 2s ease-out forwards;
@@ -120,13 +128,19 @@ h1{
     flex-direction: column;
     justify-content: left;
     padding: 3em;
-}
+    background-color: #4a4a4a;
+    margin-right: 1em;
+    color: #ffff;
+    border: 20px solid transparent;
+    border-radius: 1vh;}
 .RightPane{
     display: flex;
     flex-direction: column;
-    justify-content: top;
     padding: 3em;
-    
+    background-color: #4a4a4a;
+    color: #ffff;
+    border: 20px solid transparent;
+    border-radius: 1vh;
 }
 .FullPane{
     display: flex;
@@ -164,11 +178,53 @@ h1{
     margin-right: 15vw;
     margin-bottom:10vh;
     padding: 5vw;
+    background-color: #4a4a4a;
+    color: #ffff;
+    border: 20px solid transparent;
+    border-radius: 1vh;
+
 }
 .projectPane:hover{
-    animation: changeColor 2s ease-out forwards;
+    animation: changeColorProject 2s ease-out forwards;
 }
 #ProjectTitle {
     font-size: 6vh;
     text-decoration: none;
 }
+.projectPane a:link{
+    color: #19e68c;
+}
+
+
+/* icons */
+.fa:hover {
+    opacity: 0.7;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-github {
+    background: black;
+    color: white;
+  }
+  .fa-envelope {
+    background: #2eb6f2;
+    color: white;
+  }
+  .socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:5vh;
+    padding-bottom:5vh;
+    background-color: rgb(33, 33, 34)
+  }
