@@ -180,7 +180,7 @@ z}
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 5vw;
+    padding: 2vw 0 2vw 5vw;
     background-color: #4a4a4a;
     color: #ffff;
     border: 20px solid transparent;
@@ -191,7 +191,7 @@ z}
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 5vw;
+    padding: 0 3vw 0 3vw;
     background-color: #4a4a4a;
     color: #ffff;
     border: 20px solid transparent;
