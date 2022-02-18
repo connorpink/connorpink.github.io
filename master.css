@@ -25,6 +25,13 @@ body{
     font-weight: bold;
     white-space:pre;
 }
+.nameTagLetterSmall {
+    font-size: 5vmin;
+    margin: 0;
+    display:inline;
+    font-weight: bold;
+    white-space:pre;
+}
 .nameTag1{
     display: flex;
     flex-wrap: nowrap;
