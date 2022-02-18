@@ -125,6 +125,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: left;
+    flex-wrap: wrap;
+
     padding: 3em;
     background-color: #4a4a4a;
     margin-right: 1em;
@@ -134,6 +136,7 @@ body{
 .RightPane{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     padding: 3em;
     background-color: #4a4a4a;
     color: #ffff;
@@ -144,8 +147,7 @@ body{
     display: flex;
     flex-direction: row;
     padding: 10%;
-    flex-wrap: wrap;
-}
+z}
 .FullPane h4{
     font-size: small;
 }
@@ -169,20 +171,36 @@ body{
     justify-content: center;
 }
 .projectPane{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+}
+.projectPaneLeft{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-bottom:10vh;
+    flex-wrap: wrap;
     padding: 5vw;
     background-color: #4a4a4a;
     color: #ffff;
     border: 20px solid transparent;
-    border-radius: 1vh;
-
+    border-radius: 1vh 0px 0px 1vh;
 }
-.projectPane:hover{
+.projectPaneRight{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5vw;
+    background-color: #4a4a4a;
+    color: #ffff;
+    border: 20px solid transparent;
+    border-radius: 0px 1vh 1vh 0px;
+}
+.projectPaneLeft:hover{
+    animation: changeColorProject 2s ease-out forwards;
+}
+.projectPaneRight:hover{
     animation: changeColorProject 2s ease-out forwards;
 }
 #ProjectTitle {
@@ -192,8 +210,19 @@ body{
 .projectPane a:link{
     color: #19e68c;
 }
-
-
+.projectPane a:visited{
+    color: #19e68c;
+}
+.fa-clipboard-list{
+    color: #19e68c;
+}
+.inLineIcon{
+    font-size:2vh;
+    display: inline;
+}
+.ProjectPaneRight a{
+    font-size: calc(3vh *3);
+}
 /* icons */
 .fa:hover {
     opacity: 0.7;
@@ -226,3 +255,5 @@ body{
     padding-bottom:5vh;
     background-color: rgb(33, 33, 34)
   }
+  
+  
