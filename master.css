@@ -17,6 +17,7 @@ body{
 #nameTag {
     display:flex;
     flex-wrap:wrap;
+
 }
 .nameTagLetter {
     font-size: 19vmin;
@@ -45,7 +46,7 @@ body{
     flex-direction: row;
     justify-content: center;
     color: #19e68c;
-    width: 95vw;
+    width: 80vmin;
     padding-left: 4vmin;
 }
 .NameCase2{
