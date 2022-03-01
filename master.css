@@ -314,3 +314,14 @@ body{
   }
 
   /* scroll */
+
+  #removeFormat{
+    display:inherit;
+    font-size:inherit;
+    margin-block-start:inherit;
+    margin-block-end:inherit;
+    margin-inline-start:inherit;
+    margin-inline-end:inherit;
+    font-weight:inherit;
+
+  }
