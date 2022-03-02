@@ -57,9 +57,6 @@ body{
 }
 
 
-.SectionMain{
-    
-}
 .coolThingBox{
     width:300px;
     height:300px;
@@ -68,63 +65,25 @@ body{
     justify-content: center;
 }
 
-@keyframes AnimateRight {
-    0%{
-        left:0px;
-    }
-    50%{
-        left:120px;
-    }
-    100%{
-        left:120px;
 
-    }
-  }
-  
 .LeftPane:hover .coolThing1{
-    animation-name: AnimateRight;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode:forwards;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
+    
+    transition: transform 2000ms ease-in-out;
+    transform: translateX(120px);
 }
-@keyframes AnimateLeft {
-    0%{
-        right:0px;
-    }
-    50%{
-        right:120px;
-    }
-    100%{
-        right:120px;
-    }
-  }
 
+.LeftPane:hover .coolThing2{
+    transition: transform 2000ms ease-in-out;
+    transform: translateY(-80px)
+}
 .LeftPane:hover .coolThing3{
-    animation-name: AnimateLeft;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode:forwards;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
+   
+    transition: transform 2000ms ease-in-out;
+    transform: translateX(-120px);
 }
-@keyframes changeColor{
-    0%{background-color: #4a4a4a;}
-    25%{color:white;}
-    50%{color:black;}
-    100%{background-color: #cacfce;color:black;}
-}
-@keyframes changeColorProject{
-    0%{background-color: #4a4a4a;}
-    100%{background-color: #666969;}
-}
-.LeftPane:hover{
-    animation: changeColor 2s ease-out forwards;
-}
-.RightPane:hover{
-    animation: changeColor 2s ease-out forwards;
-}
+
+
+
 
 .coolThing1{
     position:relative;
@@ -133,6 +92,8 @@ body{
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
     border-bottom: 80px solid lightblue; 
+    will-change: transform;
+    transition: transform 450ms;
 }
 
 .coolThing2{
@@ -142,7 +103,10 @@ body{
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
     border-top: 80px solid red;
-    
+    will-change: transform;
+    transition: transform 450ms;
+    top:80px;
+    z-index: 2
 }
 .coolThing3{
     position:relative;
@@ -151,7 +115,8 @@ body{
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
     border-bottom: 80px solid gray;
-
+    will-change: transform;
+    transition: transform 450ms;
 }
 .LeftPane{
     display: flex;
@@ -166,7 +131,10 @@ body{
     
     color: #ffff;
     border: 0px solid transparent;
-    border-radius: 1vh;}
+    border-radius: 1vh;
+
+    transition: background-color 0.25s ease-out;
+}
 .RightPane{
     display: flex;
     flex-direction: column;
@@ -179,6 +147,14 @@ body{
     color: #ffff;
     border: 0px solid transparent;
     border-radius: 1vh;
+
+    transition: background-color 0.25s ease-out;
+}
+.LeftPane:hover{
+    background-color: #666969;
+}
+.RightPane:hover{
+    background-color: #666969;
 }
 .FullPane{
     display: flex;
@@ -212,13 +188,13 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+
 .projectPane{
     display: flex;
     flex-direction: row;
     padding: 5%;
     padding-top: 2%;
     padding-bottom: 7%;
-    
 }
 .projectPaneLeft{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -231,6 +207,7 @@ body{
     color: #ffff;
     border: 0px solid transparent;
     border-radius: 1vh 0px 0px 1vh;
+    transition: background-color 0.25s ease-out;
 }
 .projectPaneRight{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -243,13 +220,14 @@ body{
     color: #ffff;
     border: 0px solid transparent;
     border-radius: 0px 1vh 1vh 0px;
-    width: 20%
+    width: 20%;
+    transition: background-color 0.25s ease-out;
 }
 .projectPaneLeft:hover{
-    animation: changeColorProject 2s ease-out forwards;
+    background-color: #666969;
 }
 .projectPaneRight:hover{
-    animation: changeColorProject 2s ease-out forwards;
+    background-color: #666969;
 }
 #ProjectTitle {
     font-size: 4vh;
@@ -289,6 +267,7 @@ body{
     text-align: center;
     text-decoration: none;
     margin: 0vh 1vh;
+    transition: opacity 200ms;
   }
   .fa-linkedin {
     background: #007bb5;
