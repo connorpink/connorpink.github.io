@@ -229,7 +229,11 @@ body{
 .projectPaneRight:hover{
     background-color: #666969;
 }
-#ProjectTitle {
+#ProjectTitle1 {
+    font-size: 4vh;
+    text-decoration: none;
+}
+#ProjectTitle2 {
     font-size: 4vh;
     text-decoration: none;
 }
