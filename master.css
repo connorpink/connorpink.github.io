@@ -3,7 +3,15 @@ html, body {
     margin:0;
     padding:0;
     }
+#removeFormat{
+    display:inherit;
+    
+    margin-block-start:inherit;
+    margin-block-end:inherit;
+    margin-inline-start:inherit;
+    margin-inline-end:inherit;
 
+}
 /*Root CSS */
 html{
     padding: 0;
@@ -166,20 +174,29 @@ body{
     max-width: 100%;
     flex-wrap: wrap;
 }
-.FullPane h4{
-    font-size: small;
-}
-.FullPane h5{
+
+.LeftPane h2{
     font-size:small;
+    font-weight: normal;
 }
-.FullPane p{
+.LeftPane h3{
+    font-size:1.5em;
+}
+
+.RightPane .indentedParagraph{
+    padding-left:2em;
+}
+.RightPane h2{
+    font-weight:bold;
+}
+.RightPane h3{
     font-size: small;
+    font-weight: normal;
 }
-.FullPane .indentedParagraph{
-    padding-left:1em;
+.RightPane p{
+    font-size: small;
+    margin: 16px;
 }
-
-
 /* Projects display area   */
 
 
@@ -298,13 +315,4 @@ body{
 
   /* scroll */
 
-  #removeFormat{
-    display:inherit;
-    font-size:inherit;
-    margin-block-start:inherit;
-    margin-block-end:inherit;
-    margin-inline-start:inherit;
-    margin-inline-end:inherit;
-    font-weight:inherit;
-
-  }
+  
