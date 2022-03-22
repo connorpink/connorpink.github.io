@@ -1,7 +1,7 @@
 {
   "particles": {
     "number": {
-      "value": 100,
+      "value": 80,
       "density": {
         "enable": true,
         "value_area": 800
@@ -82,7 +82,7 @@
     },
     "modes": {
       "grab": {
-        "distance": 171,
+        "distance": 100,
         "line_linked": {
           "opacity": 1
         }
@@ -95,7 +95,7 @@
         "speed": 3
       },
       "repulse": {
-        "distance": 162,
+        "distance": 80,
         "duration": 0.4
       },
       "push": {
