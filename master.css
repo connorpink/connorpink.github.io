@@ -12,6 +12,40 @@ html, body {
     margin-inline-end:inherit;
 
 }
+#theme-toggle{
+    position: relative;
+    z-index: 99;
+    border:none;
+    margin: 20px;
+    float:right;
+    padding: 15px;
+    border-radius:15px;
+    background-color: var(--accent);
+}
+#theme-toggle:hover{
+    background-color: var(--hover);
+}
+/* colors */
+:root[data-theme="light"] {
+    --text: #000000;
+    --background: #c9c9c9;
+    --primary: #2197b5;
+    --secondary: #ffffff;
+    --accent: #b2afbb;
+    --hover: #969898;
+    --altBackground: #363636;
+  }
+  :root[data-theme="dark"] {
+    --text: #ffffff;
+    --background: #363636;
+    --primary: #6de395;
+    --secondary: #000000;
+    --accent: #474450;
+    --hover: #666969;
+    --altBackground: #c9c9c9;
+
+  }
+  
 /*Root CSS */
 html{
     padding: 0;
@@ -19,7 +53,7 @@ html{
 }
 body{
     font-family: montserrat;
-    background-color: #363636;
+    background-color: var(--background);
     
 }
 /* Title Page */
@@ -58,7 +92,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: #19e68c;
+    color: var(--primary);
     width: 92vw;
     margin-left: 4vmin;
     
@@ -140,11 +174,11 @@ body{
     flex-wrap: wrap;
 
     padding: 3em;
-    background-color: #4a4a4a;
+    background-color: var(--accent);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 1em;
     
-    color: #ffff;
+    color: var(--text);
     border: 0px solid transparent;
     border-radius: 1vh;
 
@@ -161,8 +195,8 @@ body{
     margin: 1em;
 
     padding: 3em;
-    background-color: #4a4a4a;
-    color: #ffff;
+    background-color: var(--accent);
+    color: var(--text);
     border: 0px solid transparent;
     border-radius: 1vh;
 
@@ -172,10 +206,10 @@ body{
     z-index: 2;
 }
 .LeftPane:hover{
-    background-color: #666969;
+    background-color: var(--hover);
 }
 .RightPane:hover{
-    background-color: #666969;
+    background-color: var(--hover);
 }
 .FullPane{
     display: flex;
@@ -235,8 +269,8 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     padding: 2vw 1vw 2vw 5vw;
-    background-color: #4a4a4a;
-    color: #ffff;
+    background-color: var(--accent);
+    color: var(--text);
     border: 0px solid transparent;
     border-radius: 1vh 0px 0px 1vh;
     transition: background-color 0.25s ease-out;
@@ -249,8 +283,8 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     padding: 0 3vw 0 3vw;
-    background-color: #4a4a4a;
-    color: #ffff;
+    background-color: var(--accent);
+    color: var(--text);
     border: 0px solid transparent;
     border-radius: 0px 1vh 1vh 0px;
     width: 20%;
@@ -258,10 +292,10 @@ body{
     
 }
 .projectPaneLeft:hover{
-    background-color: #666969;
+    background-color: var(--hover);
 }
 .projectPaneRight:hover{
-    background-color: #666969;
+    background-color: var(--hover);
 }
 #ProjectTitle1 {
     font-size: 4vh;
@@ -272,13 +306,13 @@ body{
     text-decoration: none;
 }
 .projectPane a:link{
-    color: #19e68c;
+    color: var(--primary);
 }
 .projectPane a:visited{
-    color: #19e68c;
+    color: var(--primary);
 }
 .fa-clipboard-list{
-    color: #19e68c;
+    color: var(--primary);
 }
 .inLineIcon{
     font-size:2vh;
@@ -325,7 +359,7 @@ body{
     justify-content: center;
     padding-top:5vh;
     padding-bottom:5vh;
-    background-color: rgb(33, 33, 34);
+    background-color: var(--secondary);
     border: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 999 !important;
