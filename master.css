@@ -274,7 +274,7 @@ body{
     border: 0px solid transparent;
     border-radius: 1vh 0px 0px 1vh;
     transition: background-color 0.25s ease-out;
-    
+    width:100%;
 }
 .projectPaneRight{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
